@@ -1,10 +1,10 @@
 const router = require("express").Router();
-import pass from '../passes';
+const pass = require('../passes.js');
 const mysql = require('mysql');
 const con = mysql.createPool({
-  host: pass.mysql.host,
-  user: pass.mysql.user,
-  password: pass.mysql.pwd,
+  host: pass.pass.database.host,
+  user: pass.pass.database.user,
+  password: pass.pass.database.pwd,
   database: "malilnickaau_zoe",
   charset: "utf8mb4"
 });
