@@ -1,4 +1,5 @@
 # schoolly
+live: www.schoolly.pl
 
 ## Project setup
 
